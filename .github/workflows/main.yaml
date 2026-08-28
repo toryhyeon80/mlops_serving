@@ -23,6 +23,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
+          platforms: linux/arm64
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-ml-app:latest
 
   deploy:
